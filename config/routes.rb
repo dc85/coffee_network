@@ -1,4 +1,10 @@
 CoffeeNetwork::Application.routes.draw do
+  get "splash_pages/home"
+
+  get "splash_pages/help"
+
+  get "splash_pages/about"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
