@@ -9,10 +9,15 @@ describe "Splash pages" do
       page.should have_content('hello@coffeenetwork.ca')
     end
     
-    it "should have the right title" do
+    it "should have the base title" do
       visit '/splash_pages/home'
       page.should have_selector('title',
-                        :text => "Coffee Network | Home")
+                        :text => "Coffee Network")
+    end
+    
+    it "should have a custom page title" do
+      visit '/splash_pages/home'
+      page.should have_selector('title', :text => '| Home')
     end
   end
   
@@ -23,10 +28,15 @@ describe "Splash pages" do
       page.should have_content('help@coffeenetwork.ca')
     end
     
-    it "should have the right title" do
+    it "should have the base title" do
       visit '/splash_pages/help'
       page.should have_selector('title',
-                        :text => "Coffee Network | Help")
+                        :text => "Coffee Network")
+    end
+    
+    it "should have a custom page title" do
+      visit '/splash_pages/help'
+      page.should have_selector('title', :text => '| Help')
     end
   end
   
@@ -37,10 +47,15 @@ describe "Splash pages" do
       page.should have_content('About Us')
     end
     
-    it "should have the right title" do
+    it "should have the base title" do
       visit '/splash_pages/about'
       page.should have_selector('title',
-                        :text => "Coffee Network | About")
+                        :text => "Coffee Network")
+    end
+    
+    it "should have a custom page title" do
+      visit '/splash_pages/about'
+      page.should have_selector('title', :text => '| About')
     end
   end
 end
