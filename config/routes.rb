@@ -2,7 +2,7 @@ CoffeeNetwork::Application.routes.draw do
   get "users/new"
 
   root to: 'splash_pages#home'
-  
+    
   match '/signup',  to: 'users#new'
 
   match '/help',    to: 'splash_pages#help'
