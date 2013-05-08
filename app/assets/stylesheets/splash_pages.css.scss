@@ -1,3 +1,3122 @@
-// Place all the styles related to the Splash_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+    color: #000;
+    background: #FFF;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, button {
+    margin: 0;
+    padding: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset, img {
+    border: 0;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+li {
+    list-style: none;
+}
+caption, th {
+    text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+q:before, q:after {
+    content: ''}
+abbr, acronym {
+    border: 0;
+    font-variant: normal;
+}
+sup {
+    vertical-align: text-top;
+}
+sub {
+    vertical-align: text-bottom;
+}
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+input, textarea, select {
+    *font-size: 100%}
+legend {
+    color: #000;
+}
+ins, del {
+    text-decoration: none;
+}
+body {
+    font: 13px/1.231 arial, helvetica, clean, sans-serif;
+    *font-size: small;
+    *font: x-small;
+}
+select, input, button, textarea {
+    font: 99% arial, helvetica, clean, sans-serif;
+}
+table {
+    font-size: inherit;
+    font: 100%}
+pre, code, kbd, samp, tt {
+    font-family: monospace;
+    *font-size: 108%;
+    line-height: 100%}
+.yui3-g {
+    letter-spacing: -0.31em;
+    *letter-spacing: normal;
+    word-spacing: -0.43em;
+}
+.yui3-u, .yui3-u-1, .yui3-u-1-2, .yui3-u-1-3, .yui3-u-2-3, .yui3-u-1-4, .yui3-u-3-4, .yui3-u-1-5, .yui3-u-2-5, .yui3-u-3-5, .yui3-u-4-5, .yui3-u-1-6, .yui3-u-5-6, .yui3-u-1-8, .yui3-u-3-8, .yui3-u-5-8, .yui3-u-7-8, .yui3-u-1-12, .yui3-u-5-12, .yui3-u-7-12, .yui3-u-11-12, .yui3-u-1-24, .yui3-u-5-24, .yui3-u-7-24, .yui3-u-11-24, .yui3-u-13-24, .yui3-u-17-24, .yui3-u-19-24, .yui3-u-23-24 {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+}
+.yui3-u-1 {
+    display: block;
+}
+.yui3-u-1-2 {
+    width: 50%}
+.yui3-u-1-3 {
+    width: 33.33333%}
+.yui3-u-2-3 {
+    width: 66.66666%}
+.yui3-u-1-4 {
+    width: 25%}
+.yui3-u-3-4 {
+    width: 75%}
+.yui3-u-1-5 {
+    width: 20%}
+.yui3-u-2-5 {
+    width: 40%}
+.yui3-u-3-5 {
+    width: 60%}
+.yui3-u-4-5 {
+    width: 80%}
+.yui3-u-1-6 {
+    width: 16.656%}
+.yui3-u-5-6 {
+    width: 83.33%}
+.yui3-u-1-8 {
+    width: 12.5%}
+.yui3-u-3-8 {
+    width: 37.5%}
+.yui3-u-5-8 {
+    width: 62.5%}
+.yui3-u-7-8 {
+    width: 87.5%}
+.yui3-u-1-12 {
+    width: 8.3333%}
+.yui3-u-5-12 {
+    width: 41.6666%}
+.yui3-u-7-12 {
+    width: 58.3333%}
+.yui3-u-11-12 {
+    width: 91.6666%}
+.yui3-u-1-24 {
+    width: 4.1666%}
+.yui3-u-5-24 {
+    width: 20.8333%}
+.yui3-u-7-24 {
+    width: 29.1666%}
+.yui3-u-11-24 {
+    width: 45.8333%}
+.yui3-u-13-24 {
+    width: 54.1666%}
+.yui3-u-17-24 {
+    width: 70.8333%}
+.yui3-u-19-24 {
+    width: 79.1666%}
+.yui3-u-23-24 {
+    width: 95.8333%}
+.none {
+    display: none;
+}
+.inactive-content {
+    position: absolute;
+    left: -10000px;
+    top: -10000px;
+    visibility: hidden;
+}
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+.center {
+    display: table;
+    margin: 0 auto;
+}
+.clearfix {
+    zoom: 1;
+}
+.clearfix:after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    content: " ";
+    font-size: 0;
+}
+.border-box {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+.overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.unselectable {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-rendering: optimizeLegibility;
+}
+a, a:link {
+    text-decoration: none;
+    cursor: pointer;
+    color: #385ea7;
+}
+a:hover, a:link:hover {
+    color: #4e76c4;
+}
+a.external {
+    padding-right: 14px;
+    background-color: transparent;
+    background-image: url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/icons/app/external-link.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png);
+    background-repeat: no-repeat;
+    background-position: right 2px;
+}
+div.divider {
+    height: 1px;
+    background-color: #d2d2ca;
+    border-bottom: 1px solid white;
+}
+button.blue {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    background: #709adf;
+    background: -moz-linear-gradient(top, #90baff 0, #517bc0 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #90baff), color-stop(0.65, #517bc0));
+    background: -moz-linear-gradient(top, #90baff 0, #517bc0 65%, #608acf 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #90baff), color-stop(0.65, #517bc0), color-stop(1, #608acf));
+    background-clip: padding-box;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border-top: 1px solid #517bc0;
+    border-right: 1px solid #3b62a3;
+    border-bottom: 1px solid #345790;
+    border-left: 1px solid #3b62a3;
+    -moz-box-shadow: inset 0 1px 0 0 #c1d0e9;
+    -webkit-box-shadow: inset 0 1px 0 0 #c1d0e9;
+    box-shadow: inset 0 1px 0 0 #c1d0e9;
+    font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    font-style: default;
+    line-height: 1;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    text-align: center;
+    text-shadow: 0 -1px 0 #294572;
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    height: 34px;
+    display: block;
+    padding-bottom: 1px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    button.blue {
+    padding-bottom: 0;
+}
+}button.blue:hover {
+    cursor: pointer;
+    background: #5881c3;
+    background: #79a0e1;
+    background: -moz-linear-gradient(top, #9ac0ff 0, #5881c3 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #9ac0ff), color-stop(0.65, #5881c3));
+    background: -moz-linear-gradient(top, #9ac0ff 0, #5881c3 65%, #6890d1 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #9ac0ff), color-stop(0.65, #5881c3), color-stop(1, #6890d1));
+    background-clip: padding-box;
+}
+button.blue:active {
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #5c84c4;
+    background: #4b73b3;
+    background: -moz-linear-gradient(top, #3b62a3 20%, #5c84c4 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #3b62a3), color-stop(1, #5c84c4));
+    -moz-box-shadow: inset 0 1px 0 0 #6f92cb;
+    -webkit-box-shadow: inset 0 1px 0 0 #6f92cb;
+    box-shadow: inset 0 1px 0 0 #6f92cb;
+    border-top: 1px solid #2d4c7e;
+    border-right: 1px solid #325389;
+    border-bottom: 1px solid #345790;
+    border-left: 1px solid #325389;
+    text-shadow: 0 -1px 0 #2d4c7e;
+    background-clip: padding-box;
+}
+button.blue:focus {
+    outline: 0;
+}
+button.blue::-moz-focus-inner {
+    border-color: transparent;
+}
+button.blue span.loading {
+    display: none;
+}
+button.green {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    background: #58ad23;
+    background: -moz-linear-gradient(top, #6fcd31 0, #418e16 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #6fcd31), color-stop(0.65, #418e16));
+    background: -moz-linear-gradient(top, #6fcd31 0, #418e16 65%, #55a922 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #6fcd31), color-stop(0.65, #418e16), color-stop(1, #55a922));
+    background-clip: padding-box;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border-top: 1px solid #418e16;
+    border-right: 1px solid #2d620f;
+    border-bottom: 1px solid #234c0c;
+    border-left: 1px solid #2d620f;
+    -moz-box-shadow: inset 0 1px 0 0 #8ae558;
+    -webkit-box-shadow: inset 0 1px 0 0 #8ae558;
+    box-shadow: inset 0 1px 0 0 #8ae558;
+    font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    font-style: default;
+    line-height: 1;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    text-align: center;
+    text-shadow: 0 -1px 0 #132806;
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    height: 34px;
+    display: block;
+    padding-bottom: 1px;
+    text-shadow: 0 -1px 0 #21470b;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    button.green {
+    padding-bottom: 0;
+}
+}button.green:hover {
+    cursor: pointer;
+    background: #459717;
+    background: #5db328;
+    background: -moz-linear-gradient(top, #75d039 0, #459717 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #75d039), color-stop(0.65, #459717));
+    background: -moz-linear-gradient(top, #75d039 0, #459717 65%, #59b124 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #75d039), color-stop(0.65, #459717), color-stop(1, #59b124));
+    background-clip: padding-box;
+}
+button.green:active {
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #479b18;
+    background: #3a7e13;
+    background: -moz-linear-gradient(top, #2d620f 20%, #479b18 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #2d620f), color-stop(1, #479b18));
+    -moz-box-shadow: inset 0 1px 0 0 #51b11b;
+    -webkit-box-shadow: inset 0 1px 0 0 #51b11b;
+    box-shadow: inset 0 1px 0 0 #51b11b;
+    border-top: 1px solid #193608;
+    border-right: 1px solid #1f430a;
+    border-bottom: 1px solid #234c0c;
+    border-left: 1px solid #1f430a;
+    text-shadow: 0 -1px 0 #193608;
+    background-clip: padding-box;
+}
+button.green:focus {
+    outline: 0;
+}
+button.green::-moz-focus-inner {
+    border-color: transparent;
+}
+button.green span.loading {
+    display: none;
+}
+button.red {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    background: #d02d17;
+    background: -moz-linear-gradient(top, #ec432e 0, #b41700 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ec432e), color-stop(0.65, #b41700));
+    background: -moz-linear-gradient(top, #ec432e 0, #b41700 65%, #ec432e 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ec432e), color-stop(0.65, #b41700), color-stop(1, #ec432e));
+    background-clip: padding-box;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border-top: 1px solid #b41700;
+    border-right: 1px solid #811000;
+    border-bottom: 1px solid #680d00;
+    border-left: 1px solid #811000;
+    -moz-box-shadow: inset 0 1px 0 0 #ff654e;
+    -webkit-box-shadow: inset 0 1px 0 0 #ff654e;
+    box-shadow: inset 0 1px 0 0 #ff654e;
+    font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    font-style: default;
+    line-height: 1;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    text-align: center;
+    text-shadow: 0 -1px 0 #3f0800;
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    height: 34px;
+    display: block;
+    padding-bottom: 1px;
+    text-shadow: 0 -1px 0 #620d00;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    button.red {
+    padding-bottom: 0;
+}
+}button.red:hover {
+    cursor: pointer;
+    background: #be1800;
+    background: #d5311b;
+    background: -moz-linear-gradient(top, #ed4b37 0, #be1800 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ed4b37), color-stop(0.65, #be1800));
+    background: -moz-linear-gradient(top, #ed4b37 0, #be1800 65%, #ed4b37 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ed4b37), color-stop(0.65, #be1800), color-stop(1, #ed4b37));
+    background-clip: padding-box;
+}
+button.red:active {
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #c31900;
+    background: #a21400;
+    background: -moz-linear-gradient(top, #811000 20%, #c31900 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #811000), color-stop(1, #c31900));
+    -moz-box-shadow: inset 0 1px 0 0 #dd1c00;
+    -webkit-box-shadow: inset 0 1px 0 0 #dd1c00;
+    box-shadow: inset 0 1px 0 0 #dd1c00;
+    border-top: 1px solid #4e0a00;
+    border-right: 1px solid #5d0c00;
+    border-bottom: 1px solid #680d00;
+    border-left: 1px solid #5d0c00;
+    text-shadow: 0 -1px 0 #4e0a00;
+    background-clip: padding-box;
+}
+button.red:focus {
+    outline: 0;
+}
+button.red::-moz-focus-inner {
+    border-color: transparent;
+}
+button.red span.loading {
+    display: none;
+}
+button.grey {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    background: #cecece;
+    background: -moz-linear-gradient(top, #ededed 0, #b0b0b0 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ededed), color-stop(0.65, #b0b0b0));
+    background: -moz-linear-gradient(top, #ededed 0, #b0b0b0 65%, #bbb 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ededed), color-stop(0.65, #b0b0b0), color-stop(1, #bbb));
+    background-clip: padding-box;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border-top: 1px solid #b0b0b0;
+    border-right: 1px solid #979797;
+    border-bottom: 1px solid #8a8a8a;
+    border-left: 1px solid #979797;
+    -moz-box-shadow: inset 0 1px 0 0 #fcfcfc;
+    -webkit-box-shadow: inset 0 1px 0 0 #fcfcfc;
+    box-shadow: inset 0 1px 0 0 #fcfcfc;
+    font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    font-style: default;
+    line-height: 1;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    text-align: center;
+    text-shadow: 0 -1px 0 #757575;
+    text-decoration: none;
+    color: #333;
+    width: 100px;
+    height: 34px;
+    display: block;
+    padding-bottom: 1px;
+    text-shadow: 0 1px 0 #e3e3e3;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    button.grey {
+    padding-bottom: 0;
+}
+}button.grey:hover {
+    cursor: pointer;
+    background: #b5b5b5;
+    background: lightgrey;
+    background: -moz-linear-gradient(top, #f2f2f2 0, #b5b5b5 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #f2f2f2), color-stop(0.65, #b5b5b5));
+    background: -moz-linear-gradient(top, #f2f2f2 0, #b5b5b5 65%, silver 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #f2f2f2), color-stop(0.65, #b5b5b5), color-stop(1, silver));
+    background-clip: padding-box;
+}
+button.grey:active {
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #b8b8b8;
+    background: #a7a7a7;
+    background: -moz-linear-gradient(top, #979797 20%, #b8b8b8 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #979797), color-stop(1, #b8b8b8));
+    -moz-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    -webkit-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    box-shadow: inset 0 1px 0 0 #c4c4c4;
+    border-top: 1px solid #7d7d7d;
+    border-right: 1px solid #858585;
+    border-bottom: 1px solid #8a8a8a;
+    border-left: 1px solid #858585;
+    text-shadow: 0 -1px 0 #7d7d7d;
+    background-clip: padding-box;
+}
+button.grey:focus {
+    outline: 0;
+}
+button.grey::-moz-focus-inner {
+    border-color: transparent;
+}
+button.grey span.loading {
+    display: none;
+}
+button.grey:active {
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #b8b8b8;
+    background: #a7a7a7;
+    background: -moz-linear-gradient(top, #979797 20%, #b8b8b8 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #979797), color-stop(1, #b8b8b8));
+    -moz-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    -webkit-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    box-shadow: inset 0 1px 0 0 #c4c4c4;
+    border-top: 1px solid #7d7d7d;
+    border-right: 1px solid #858585;
+    border-bottom: 1px solid #8a8a8a;
+    border-left: 1px solid #858585;
+    text-shadow: 0 -1px 0 #7d7d7d;
+    background-clip: padding-box;
+    text-shadow: 0 1px 0 #cfcfcf;
+}
+button.light-grey {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    background: #e5e5e5;
+    background: -moz-linear-gradient(top, #ebebeb 0, #dfdfdf 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ebebeb), color-stop(0.65, #dfdfdf));
+    background: -moz-linear-gradient(top, #ebebeb 0, #dfdfdf 65%, #d5d5d5 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ebebeb), color-stop(0.65, #dfdfdf), color-stop(1, #d5d5d5));
+    background-clip: padding-box;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border-top: 1px solid #dfdfdf;
+    border-right: 1px solid #c6c6c6;
+    border-bottom: 1px solid #b9b9b9;
+    border-left: 1px solid #c6c6c6;
+    -moz-box-shadow: inset 0 1px 0 0 white;
+    -webkit-box-shadow: inset 0 1px 0 0 white;
+    box-shadow: inset 0 1px 0 0 white;
+    font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    font-style: default;
+    line-height: 1;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    text-align: center;
+    text-shadow: 0 -1px 0 #a4a4a4;
+    text-decoration: none;
+    color: #555;
+    width: 100px;
+    height: 34px;
+    display: block;
+    padding-bottom: 1px;
+    -moz-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.6);
+    -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.6);
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.6);
+    text-shadow: 0 1px 0 white;
+    border-top-color: #d5d5d5;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    button.light-grey {
+    padding-bottom: 0;
+}
+}button.light-grey:hover {
+    cursor: pointer;
+    background: #e4e4e4;
+    background: #eaeaea;
+    background: -moz-linear-gradient(top, #f0f0f0 0, #e4e4e4 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #f0f0f0), color-stop(0.65, #e4e4e4));
+    background: -moz-linear-gradient(top, #f0f0f0 0, #e4e4e4 65%, #dadada 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #f0f0f0), color-stop(0.65, #e4e4e4), color-stop(1, #dadada));
+    background-clip: padding-box;
+}
+button.light-grey:active {
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #e7e7e7;
+    background: #d6d6d6;
+    background: -moz-linear-gradient(top, #c6c6c6 20%, #e7e7e7 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #c6c6c6), color-stop(1, #e7e7e7));
+    -moz-box-shadow: inset 0 1px 0 0 #f3f3f3;
+    -webkit-box-shadow: inset 0 1px 0 0 #f3f3f3;
+    box-shadow: inset 0 1px 0 0 #f3f3f3;
+    border-top: 1px solid #acacac;
+    border-right: 1px solid #b4b4b4;
+    border-bottom: 1px solid #b9b9b9;
+    border-left: 1px solid #b4b4b4;
+    text-shadow: 0 -1px 0 #acacac;
+    background-clip: padding-box;
+}
+button.light-grey:focus {
+    outline: 0;
+}
+button.light-grey::-moz-focus-inner {
+    border-color: transparent;
+}
+button.light-grey span.loading {
+    display: none;
+}
+button.light-grey:active {
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #e7e7e7;
+    background: #d6d6d6;
+    background: -moz-linear-gradient(top, #c6c6c6 20%, #e7e7e7 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #c6c6c6), color-stop(1, #e7e7e7));
+    -moz-box-shadow: inset 0 1px 0 0 #f3f3f3;
+    -webkit-box-shadow: inset 0 1px 0 0 #f3f3f3;
+    box-shadow: inset 0 1px 0 0 #f3f3f3;
+    border-top: 1px solid #acacac;
+    border-right: 1px solid #b4b4b4;
+    border-bottom: 1px solid #b9b9b9;
+    border-left: 1px solid #b4b4b4;
+    text-shadow: 0 -1px 0 #acacac;
+    background-clip: padding-box;
+    text-shadow: 0 1px 0 #fefefe;
+}
+button.blue.loading, button.green.loading, button.red.loading, button.grey.loading, button.light-grey.loading {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    background: #cecece;
+    background: -moz-linear-gradient(top, #ededed 0, #b0b0b0 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ededed), color-stop(0.65, #b0b0b0));
+    background: -moz-linear-gradient(top, #ededed 0, #b0b0b0 65%, #bbb 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ededed), color-stop(0.65, #b0b0b0), color-stop(1, #bbb));
+    background-clip: padding-box;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border-top: 1px solid #b0b0b0;
+    border-right: 1px solid #979797;
+    border-bottom: 1px solid #8a8a8a;
+    border-left: 1px solid #979797;
+    -moz-box-shadow: inset 0 1px 0 0 #fcfcfc;
+    -webkit-box-shadow: inset 0 1px 0 0 #fcfcfc;
+    box-shadow: inset 0 1px 0 0 #fcfcfc;
+    font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    font-style: default;
+    line-height: 1;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    text-align: center;
+    text-shadow: 0 -1px 0 #757575;
+    text-decoration: none;
+    color: #333;
+    width: 100px;
+    height: 34px;
+    display: block;
+    padding-bottom: 1px;
+    text-shadow: 0 1px 0 #e3e3e3;
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #b8b8b8;
+    background: #a7a7a7;
+    background: -moz-linear-gradient(top, #979797 20%, #b8b8b8 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #979797), color-stop(1, #b8b8b8));
+    -moz-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    -webkit-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    box-shadow: inset 0 1px 0 0 #c4c4c4;
+    border-top: 1px solid #7d7d7d;
+    border-right: 1px solid #858585;
+    border-bottom: 1px solid #8a8a8a;
+    border-left: 1px solid #858585;
+    text-shadow: 0 -1px 0 #7d7d7d;
+    background-clip: padding-box;
+    text-shadow: 0 1px 0 #cfcfcf;
+    color: #555;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    button.blue.loading, button.green.loading, button.red.loading, button.grey.loading, button.light-grey.loading {
+    padding-bottom: 0;
+}
+}button.blue.loading:hover, button.green.loading:hover, button.red.loading:hover, button.grey.loading:hover, button.light-grey.loading:hover {
+    cursor: pointer;
+    background: #b5b5b5;
+    background: lightgrey;
+    background: -moz-linear-gradient(top, #f2f2f2 0, #b5b5b5 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #f2f2f2), color-stop(0.65, #b5b5b5));
+    background: -moz-linear-gradient(top, #f2f2f2 0, #b5b5b5 65%, silver 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #f2f2f2), color-stop(0.65, #b5b5b5), color-stop(1, silver));
+    background-clip: padding-box;
+}
+button.blue.loading:active, button.green.loading:active, button.red.loading:active, button.grey.loading:active, button.light-grey.loading:active {
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #b8b8b8;
+    background: #a7a7a7;
+    background: -moz-linear-gradient(top, #979797 20%, #b8b8b8 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #979797), color-stop(1, #b8b8b8));
+    -moz-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    -webkit-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    box-shadow: inset 0 1px 0 0 #c4c4c4;
+    border-top: 1px solid #7d7d7d;
+    border-right: 1px solid #858585;
+    border-bottom: 1px solid #8a8a8a;
+    border-left: 1px solid #858585;
+    text-shadow: 0 -1px 0 #7d7d7d;
+    background-clip: padding-box;
+}
+button.blue.loading:focus, button.green.loading:focus, button.red.loading:focus, button.grey.loading:focus, button.light-grey.loading:focus {
+    outline: 0;
+}
+button.blue.loading::-moz-focus-inner, button.green.loading::-moz-focus-inner, button.red.loading::-moz-focus-inner, button.grey.loading::-moz-focus-inner, button.light-grey.loading::-moz-focus-inner {
+    border-color: transparent;
+}
+button.blue.loading span.loading, button.green.loading span.loading, button.red.loading span.loading, button.grey.loading span.loading, button.light-grey.loading span.loading {
+    display: none;
+}
+button.blue.loading:active, button.green.loading:active, button.red.loading:active, button.grey.loading:active, button.light-grey.loading:active {
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #b8b8b8;
+    background: #a7a7a7;
+    background: -moz-linear-gradient(top, #979797 20%, #b8b8b8 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #979797), color-stop(1, #b8b8b8));
+    -moz-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    -webkit-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    box-shadow: inset 0 1px 0 0 #c4c4c4;
+    border-top: 1px solid #7d7d7d;
+    border-right: 1px solid #858585;
+    border-bottom: 1px solid #8a8a8a;
+    border-left: 1px solid #858585;
+    text-shadow: 0 -1px 0 #7d7d7d;
+    background-clip: padding-box;
+    text-shadow: 0 1px 0 #cfcfcf;
+}
+button.blue.loading:hover, button.green.loading:hover, button.red.loading:hover, button.grey.loading:hover, button.light-grey.loading:hover {
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #b8b8b8;
+    background: #a7a7a7;
+    background: -moz-linear-gradient(top, #979797 20%, #b8b8b8 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #979797), color-stop(1, #b8b8b8));
+    -moz-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    -webkit-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    box-shadow: inset 0 1px 0 0 #c4c4c4;
+    border-top: 1px solid #7d7d7d;
+    border-right: 1px solid #858585;
+    border-bottom: 1px solid #8a8a8a;
+    border-left: 1px solid #858585;
+    text-shadow: 0 -1px 0 #7d7d7d;
+    background-clip: padding-box;
+    text-shadow: 0 1px 0 #cfcfcf;
+    color: #555;
+}
+button.blue.loading span.text, button.green.loading span.text, button.red.loading span.text, button.grey.loading span.text, button.light-grey.loading span.text {
+    display: none;
+}
+button.blue.loading span.loading, button.green.loading span.loading, button.red.loading span.loading, button.grey.loading span.loading, button.light-grey.loading span.loading {
+    display: inline;
+}
+body.msie .browser-msie-hide {
+    display: none!important;
+}
+body.ipad .browser-ipad-hide {
+    display: none!important;
+}
+body {
+    font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: default;
+    line-height: 1.231;
+    color: #333;
+}
+input, select, textarea {
+    font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif;
+    font-size: default;
+    font-weight: normal;
+    font-style: default;
+    line-height: default;
+}
+pre, code, kbd, samp, tt {
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    font-size: 93%;
+    font-weight: normal;
+    font-style: default;
+    line-height: default;
+}
+div.alert-box {
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.55);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.55);
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    width: 300px;
+    z-index: 200;
+    padding: 15px 10px 10px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.25);
+}
+div.alert-box div.body {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    color: white;
+}
+div.alert-box div.controls {
+    margin-top: 10px;
+    zoom: 1;
+    height: 28px;
+}
+div.alert-box div.controls:after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    content: " ";
+    font-size: 0;
+}
+div.alert-box div.controls a.button-important {
+    margin-right: 15px;
+    font-size: 85%;
+    line-height: 28px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #ff4646;
+}
+div.alert-box div.controls a.button-important:hover {
+    color: #ff7979;
+}
+div.alert-box div.controls button.button-delete {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    background: #d02d17;
+    background: -moz-linear-gradient(top, #ec432e 0, #b41700 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ec432e), color-stop(0.65, #b41700));
+    background: -moz-linear-gradient(top, #ec432e 0, #b41700 65%, #ec432e 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ec432e), color-stop(0.65, #b41700), color-stop(1, #ec432e));
+    background-clip: padding-box;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border-top: 1px solid #b41700;
+    border-right: 1px solid #811000;
+    border-bottom: 1px solid #680d00;
+    border-left: 1px solid #811000;
+    -moz-box-shadow: inset 0 1px 0 0 #ff654e;
+    -webkit-box-shadow: inset 0 1px 0 0 #ff654e;
+    box-shadow: inset 0 1px 0 0 #ff654e;
+    font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif;
+    font-size: 85%;
+    font-weight: bold;
+    font-style: default;
+    line-height: 1;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    text-align: center;
+    text-shadow: 0 -1px 0 #3f0800;
+    text-decoration: none;
+    color: white;
+    width: 70px;
+    height: 28px;
+    display: block;
+    padding-bottom: 1px;
+    text-shadow: 0 -1px 0 #620d00;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    div.alert-box div.controls button.button-delete {
+    padding-bottom: 0;
+}
+}div.alert-box div.controls button.button-delete:hover {
+    cursor: pointer;
+    background: #be1800;
+    background: #d5311b;
+    background: -moz-linear-gradient(top, #ed4b37 0, #be1800 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ed4b37), color-stop(0.65, #be1800));
+    background: -moz-linear-gradient(top, #ed4b37 0, #be1800 65%, #ed4b37 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ed4b37), color-stop(0.65, #be1800), color-stop(1, #ed4b37));
+    background-clip: padding-box;
+}
+div.alert-box div.controls button.button-delete:active {
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #c31900;
+    background: #a21400;
+    background: -moz-linear-gradient(top, #811000 20%, #c31900 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #811000), color-stop(1, #c31900));
+    -moz-box-shadow: inset 0 1px 0 0 #dd1c00;
+    -webkit-box-shadow: inset 0 1px 0 0 #dd1c00;
+    box-shadow: inset 0 1px 0 0 #dd1c00;
+    border-top: 1px solid #4e0a00;
+    border-right: 1px solid #5d0c00;
+    border-bottom: 1px solid #680d00;
+    border-left: 1px solid #5d0c00;
+    text-shadow: 0 -1px 0 #4e0a00;
+    background-clip: padding-box;
+}
+div.alert-box div.controls button.button-delete:focus {
+    outline: 0;
+}
+div.alert-box div.controls button.button-delete::-moz-focus-inner {
+    border-color: transparent;
+}
+div.alert-box div.controls button.button-delete span.loading {
+    display: none;
+}
+div.alert-box div.controls button.button-update {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    background: #58ad23;
+    background: -moz-linear-gradient(top, #6fcd31 0, #418e16 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #6fcd31), color-stop(0.65, #418e16));
+    background: -moz-linear-gradient(top, #6fcd31 0, #418e16 65%, #55a922 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #6fcd31), color-stop(0.65, #418e16), color-stop(1, #55a922));
+    background-clip: padding-box;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border-top: 1px solid #418e16;
+    border-right: 1px solid #2d620f;
+    border-bottom: 1px solid #234c0c;
+    border-left: 1px solid #2d620f;
+    -moz-box-shadow: inset 0 1px 0 0 #8ae558;
+    -webkit-box-shadow: inset 0 1px 0 0 #8ae558;
+    box-shadow: inset 0 1px 0 0 #8ae558;
+    font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif;
+    font-size: 85%;
+    font-weight: bold;
+    font-style: default;
+    line-height: 1;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    text-align: center;
+    text-shadow: 0 -1px 0 #132806;
+    text-decoration: none;
+    color: white;
+    width: 70px;
+    height: 28px;
+    display: block;
+    padding-bottom: 1px;
+    text-shadow: 0 -1px 0 #21470b;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    div.alert-box div.controls button.button-update {
+    padding-bottom: 0;
+}
+}div.alert-box div.controls button.button-update:hover {
+    cursor: pointer;
+    background: #459717;
+    background: #5db328;
+    background: -moz-linear-gradient(top, #75d039 0, #459717 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #75d039), color-stop(0.65, #459717));
+    background: -moz-linear-gradient(top, #75d039 0, #459717 65%, #59b124 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #75d039), color-stop(0.65, #459717), color-stop(1, #59b124));
+    background-clip: padding-box;
+}
+div.alert-box div.controls button.button-update:active {
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #479b18;
+    background: #3a7e13;
+    background: -moz-linear-gradient(top, #2d620f 20%, #479b18 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #2d620f), color-stop(1, #479b18));
+    -moz-box-shadow: inset 0 1px 0 0 #51b11b;
+    -webkit-box-shadow: inset 0 1px 0 0 #51b11b;
+    box-shadow: inset 0 1px 0 0 #51b11b;
+    border-top: 1px solid #193608;
+    border-right: 1px solid #1f430a;
+    border-bottom: 1px solid #234c0c;
+    border-left: 1px solid #1f430a;
+    text-shadow: 0 -1px 0 #193608;
+    background-clip: padding-box;
+}
+div.alert-box div.controls button.button-update:focus {
+    outline: 0;
+}
+div.alert-box div.controls button.button-update::-moz-focus-inner {
+    border-color: transparent;
+}
+div.alert-box div.controls button.button-update span.loading {
+    display: none;
+}
+div.alert-box div.controls button.button-action {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    background: #709adf;
+    background: -moz-linear-gradient(top, #90baff 0, #517bc0 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #90baff), color-stop(0.65, #517bc0));
+    background: -moz-linear-gradient(top, #90baff 0, #517bc0 65%, #608acf 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #90baff), color-stop(0.65, #517bc0), color-stop(1, #608acf));
+    background-clip: padding-box;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border-top: 1px solid #517bc0;
+    border-right: 1px solid #3b62a3;
+    border-bottom: 1px solid #345790;
+    border-left: 1px solid #3b62a3;
+    -moz-box-shadow: inset 0 1px 0 0 #c1d0e9;
+    -webkit-box-shadow: inset 0 1px 0 0 #c1d0e9;
+    box-shadow: inset 0 1px 0 0 #c1d0e9;
+    font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif;
+    font-size: 85%;
+    font-weight: bold;
+    font-style: default;
+    line-height: 1;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    text-align: center;
+    text-shadow: 0 -1px 0 #294572;
+    text-decoration: none;
+    color: white;
+    width: 70px;
+    height: 28px;
+    display: block;
+    padding-bottom: 1px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    div.alert-box div.controls button.button-action {
+    padding-bottom: 0;
+}
+}div.alert-box div.controls button.button-action:hover {
+    cursor: pointer;
+    background: #5881c3;
+    background: #79a0e1;
+    background: -moz-linear-gradient(top, #9ac0ff 0, #5881c3 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #9ac0ff), color-stop(0.65, #5881c3));
+    background: -moz-linear-gradient(top, #9ac0ff 0, #5881c3 65%, #6890d1 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #9ac0ff), color-stop(0.65, #5881c3), color-stop(1, #6890d1));
+    background-clip: padding-box;
+}
+div.alert-box div.controls button.button-action:active {
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #5c84c4;
+    background: #4b73b3;
+    background: -moz-linear-gradient(top, #3b62a3 20%, #5c84c4 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #3b62a3), color-stop(1, #5c84c4));
+    -moz-box-shadow: inset 0 1px 0 0 #6f92cb;
+    -webkit-box-shadow: inset 0 1px 0 0 #6f92cb;
+    box-shadow: inset 0 1px 0 0 #6f92cb;
+    border-top: 1px solid #2d4c7e;
+    border-right: 1px solid #325389;
+    border-bottom: 1px solid #345790;
+    border-left: 1px solid #325389;
+    text-shadow: 0 -1px 0 #2d4c7e;
+    background-clip: padding-box;
+}
+div.alert-box div.controls button.button-action:focus {
+    outline: 0;
+}
+div.alert-box div.controls button.button-action::-moz-focus-inner {
+    border-color: transparent;
+}
+div.alert-box div.controls button.button-action span.loading {
+    display: none;
+}
+div.alert-box div.controls button.button-loading {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    background: #cecece;
+    background: -moz-linear-gradient(top, #ededed 0, #b0b0b0 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ededed), color-stop(0.65, #b0b0b0));
+    background: -moz-linear-gradient(top, #ededed 0, #b0b0b0 65%, #bbb 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ededed), color-stop(0.65, #b0b0b0), color-stop(1, #bbb));
+    background-clip: padding-box;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border-top: 1px solid #b0b0b0;
+    border-right: 1px solid #979797;
+    border-bottom: 1px solid #8a8a8a;
+    border-left: 1px solid #979797;
+    -moz-box-shadow: inset 0 1px 0 0 #fcfcfc;
+    -webkit-box-shadow: inset 0 1px 0 0 #fcfcfc;
+    box-shadow: inset 0 1px 0 0 #fcfcfc;
+    font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif;
+    font-size: 85%;
+    font-weight: bold;
+    font-style: default;
+    line-height: 1;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    text-align: center;
+    text-shadow: 0 -1px 0 #757575;
+    text-decoration: none;
+    color: #333;
+    width: 70px;
+    height: 28px;
+    display: block;
+    padding-bottom: 1px;
+    text-shadow: 0 1px 0 #e3e3e3;
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #b8b8b8;
+    background: #a7a7a7;
+    background: -moz-linear-gradient(top, #979797 20%, #b8b8b8 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #979797), color-stop(1, #b8b8b8));
+    -moz-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    -webkit-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    box-shadow: inset 0 1px 0 0 #c4c4c4;
+    border-top: 1px solid #7d7d7d;
+    border-right: 1px solid #858585;
+    border-bottom: 1px solid #8a8a8a;
+    border-left: 1px solid #858585;
+    text-shadow: 0 -1px 0 #7d7d7d;
+    background-clip: padding-box;
+    text-shadow: 0 1px 0 #cfcfcf;
+    color: #555;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    div.alert-box div.controls button.button-loading {
+    padding-bottom: 0;
+}
+}div.alert-box div.controls button.button-loading:hover {
+    cursor: pointer;
+    background: #b5b5b5;
+    background: lightgrey;
+    background: -moz-linear-gradient(top, #f2f2f2 0, #b5b5b5 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #f2f2f2), color-stop(0.65, #b5b5b5));
+    background: -moz-linear-gradient(top, #f2f2f2 0, #b5b5b5 65%, silver 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #f2f2f2), color-stop(0.65, #b5b5b5), color-stop(1, silver));
+    background-clip: padding-box;
+}
+div.alert-box div.controls button.button-loading:active {
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #b8b8b8;
+    background: #a7a7a7;
+    background: -moz-linear-gradient(top, #979797 20%, #b8b8b8 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #979797), color-stop(1, #b8b8b8));
+    -moz-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    -webkit-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    box-shadow: inset 0 1px 0 0 #c4c4c4;
+    border-top: 1px solid #7d7d7d;
+    border-right: 1px solid #858585;
+    border-bottom: 1px solid #8a8a8a;
+    border-left: 1px solid #858585;
+    text-shadow: 0 -1px 0 #7d7d7d;
+    background-clip: padding-box;
+}
+div.alert-box div.controls button.button-loading:focus {
+    outline: 0;
+}
+div.alert-box div.controls button.button-loading::-moz-focus-inner {
+    border-color: transparent;
+}
+div.alert-box div.controls button.button-loading span.loading {
+    display: none;
+}
+div.alert-box div.controls button.button-loading:active {
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #b8b8b8;
+    background: #a7a7a7;
+    background: -moz-linear-gradient(top, #979797 20%, #b8b8b8 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #979797), color-stop(1, #b8b8b8));
+    -moz-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    -webkit-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    box-shadow: inset 0 1px 0 0 #c4c4c4;
+    border-top: 1px solid #7d7d7d;
+    border-right: 1px solid #858585;
+    border-bottom: 1px solid #8a8a8a;
+    border-left: 1px solid #858585;
+    text-shadow: 0 -1px 0 #7d7d7d;
+    background-clip: padding-box;
+    text-shadow: 0 1px 0 #cfcfcf;
+}
+div.alert-box div.controls button.button-loading:hover {
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #b8b8b8;
+    background: #a7a7a7;
+    background: -moz-linear-gradient(top, #979797 20%, #b8b8b8 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #979797), color-stop(1, #b8b8b8));
+    -moz-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    -webkit-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    box-shadow: inset 0 1px 0 0 #c4c4c4;
+    border-top: 1px solid #7d7d7d;
+    border-right: 1px solid #858585;
+    border-bottom: 1px solid #8a8a8a;
+    border-left: 1px solid #858585;
+    text-shadow: 0 -1px 0 #7d7d7d;
+    background-clip: padding-box;
+    text-shadow: 0 1px 0 #cfcfcf;
+    color: #555;
+}
+div.alert-box div.controls button.button-loading span.text {
+    display: none;
+}
+div.alert-box div.controls button.button-loading span.loading {
+    display: inline;
+}
+div.alert-box-global div.body {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    min-height: 27px;
+    font-size: 85%;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.4;
+    color: white;
+}
+html, body {
+    background: #dcedf7;
+}
+#wrap {
+    position: relative;
+}
+#main {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.07);
+    -webkit-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.07);
+    margin: 25px auto;
+    width: 950px;
+    position: relative;
+}
+#ft div.footer-container {
+    zoom: 1;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    margin: 0 auto;
+    padding: 19px 18px 13px;
+    width: 950px;
+    font-size: 85%;
+    text-align: center;
+    color: #6e6e6e;
+}
+#ft div.footer-container:after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    content: " ";
+    font-size: 0;
+}
+#ft div.footer-container span.separator {
+    margin: 0 7px;
+    color: #999;
+}
+#ft div.footer-container a {
+    color: #6e6e6e;
+}
+#hd {
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+    position: relative;
+    background: transparent url(http://coffeenetwork.ca/splashscreen2.jpg) no-repeat 0 0;
+	background-size: 960px 720px;
+    height: 420px;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+#hd div.top-bar {
+    height: 70px;
+}
+#hd div.top-bar a.home img {
+    display: block;
+    position: relative;
+    width: 101px;
+    height: 108px;
+    top: -5px;
+	left: 30px;
+    border: 0;
+}
+#hd div.top-bar h1 {
+    margin-left: 44px;
+    margin-top: 31px;
+    font-size: 116%;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+}
+#hd div.top-bar div.links {
+    width: 300px;
+    padding: 0 25px 0 0;
+}
+#hd div.top-bar div.links a.link {
+    margin-left: 15px;
+    padding: 33px 5px 5px;
+    font-weight: bold;
+    font-size: 93%;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    color: #EEE;
+}
+#hd div.top-bar div.links a.link:hover {
+    color: white;
+}
+#hd div.top-bar div.links button.signup {
+    -moz-border-radius: 18px;
+    -webkit-border-radius: 18px;
+    border-radius: 18px;
+    margin-top: 22px;
+    margin-left: 15px;
+    height: 38px;
+    width: 102px;
+    font-size: 108%}
+
+#bd {
+    overflow: hidden;
+    background-color: #f5f5f1;
+}
+#bd div.how-to-use {
+    background: #877c77;
+    background: -moz-linear-gradient(top, #938782 0, #7c726c 75%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #938782), color-stop(0.75, #7c726c));
+    -moz-box-shadow: inset 0 1px 0 #afa6a2;
+    -webkit-box-shadow: inset 0 1px 0 #afa6a2;
+    box-shadow: inset 0 1px 0 #afa6a2;
+    border-bottom: 1px solid #59524e;
+    border-top: 1px solid #76675e;
+    height: 182px;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+#bd div.how-to-use a.step {
+    color: white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    cursor: default;
+}
+#bd div.how-to-use a.step b {
+    width: 34px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 167%}
+#bd div.how-to-use a.step img {
+    vertical-align: top;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#bd div.how-to-use a.step span.desc {
+    margin-top: 9px;
+    margin-left: 34px;
+    display: block;
+    font-size: 116%;
+    font-weight: bold;
+    line-height: 1.5;
+}
+#bd div.how-to-use a.step.one {
+    margin-left: 52px;
+    margin-top: 45px;
+}
+#bd div.how-to-use a.step.one b {
+    line-height: 41px;
+}
+#bd div.how-to-use a.step.one img {
+    height: 41px;
+}
+#bd div.how-to-use a.step.one img.picture {
+    margin-right: 11px;
+    width: 56px;
+    background-image: url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/icons/lander/picture.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png);
+}
+#bd div.how-to-use a.step.one img.gif {
+    margin-right: 10px;
+    width: 51px;
+    background-image: url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/icons/lander/gif.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png);
+}
+#bd div.how-to-use a.step.one img.video {
+    width: 38px;
+    background-image: url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/icons/lander/video.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png);
+}
+#bd div.how-to-use a.step.one span.desc {
+    width: 195px;
+}
+#bd div.how-to-use a.step.two {
+    margin-top: 50px;
+    position: relative;
+}
+#bd div.how-to-use a.step.two b {
+    line-height: 32px;
+}
+#bd div.how-to-use a.step.two img {
+    position: absolute;
+    top: -26px;
+    left: 34px;
+    height: 82px;
+    width: 166px;
+    background-image: url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/icons/lander/dapt-it.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png);
+}
+#bd div.how-to-use a.step.two span.desc {
+    margin-left: 28px;
+    margin-top: 13px;
+    width: 184px;
+}
+#bd div.how-to-use a.step.three {
+    margin-top: 41px;
+}
+#bd div.how-to-use a.step.three b {
+    line-height: 49px;
+}
+#bd div.how-to-use a.step.three img {
+    height: 49px;
+}
+#bd div.how-to-use a.step.three img.app {
+    margin-right: 12px;
+    width: 49px;
+    background-image: url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/icons/lander/app.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png);
+}
+#bd div.how-to-use a.step.three img.email {
+    margin-right: 16px;
+    width: 45px;
+    background-image: url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/icons/lander/email.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png);
+}
+#bd div.how-to-use a.step.three img.chat {
+    width: 43px;
+    background-image: url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/icons/lander/chat.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png);
+}
+#bd div.how-to-use a.step.three span.desc {
+    margin-left: 45px;
+    width: 200px;
+}
+#bd div.how-to-use div.arrow {
+    margin-top: 78px;
+    margin-left: 14px;
+    margin-right: 27px;
+    text-align: center;
+}
+#bd div.how-to-use div.arrow img {
+    width: 35px;
+    height: 25px;
+    opacity: .31;
+    background: transparent url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/chrome/lander-fade-arrow.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png) no-repeat 0 0;
+}
+#bd div.how-to-use div.broadcast {
+    margin-top: 66px;
+    margin-left: 21px;
+    margin-right: 33px;
+    text-align: center;
+}
+#bd div.how-to-use div.broadcast img {
+    width: 36px;
+    height: 50px;
+    opacity: .39;
+    background: transparent url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/chrome/lander-fade-broadcast.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png) no-repeat 0 0;
+}
+#bd div.how-to-use div.learn-more {
+    text-align: center;
+}
+#bd div.how-to-use div.learn-more a {
+    padding: 6px 2px 4px;
+    display: inline-block;
+    color: #DDD;
+    font-weight: bold;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    border-bottom: 2px dotted #999;
+}
+#bd div.how-to-use div.learn-more a:hover {
+    border-color: #DDD;
+}
+#bd div.setup-extras {
+    background: #877c77;
+    background: -moz-linear-gradient(top, #938782 0, #7c726c 75%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #938782), color-stop(0.75, #7c726c));
+    -moz-box-shadow: inset 0 1px 0 #afa6a2;
+    -webkit-box-shadow: inset 0 1px 0 #afa6a2;
+    box-shadow: inset 0 1px 0 #afa6a2;
+    border-bottom: 1px solid #59524e;
+    border-top: 1px solid #76675e;
+    height: 182px;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+#bd div.setup-extras div.browser, #bd div.setup-extras div.iphone {
+    width: 49%;
+    text-align: center;
+}
+#bd div.setup-extras div.browser>h3, #bd div.setup-extras div.iphone>h3 {
+    color: white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    cursor: default;
+    font-weight: bold;
+    font-size: 116%}
+#bd div.setup-extras div.browser {
+    padding-top: 40px;
+}
+#bd div.setup-extras div.browser h3.chrome {
+    display: none;
+    margin-top: 25px;
+}
+#bd div.setup-extras div.browser h3.chrome a {
+    padding-bottom: 3px;
+    color: white;
+}
+#bd div.setup-extras div.browser h3.chrome a:hover {
+    border-bottom: 2px dotted rgba(255, 255, 255, 0.4);
+}
+#bd div.setup-extras div.browser>p {
+    margin-top: 10px;
+}
+#bd div.setup-extras div.browser>p>span {
+    color: white;
+    cursor: default;
+}
+#bd div.setup-extras div.browser>p a.dapt-it {
+    margin-left: 14px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    background: #e5e5e5;
+    background: -moz-linear-gradient(top, #ebebeb 0, #dfdfdf 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ebebeb), color-stop(0.65, #dfdfdf));
+    background: -moz-linear-gradient(top, #ebebeb 0, #dfdfdf 65%, #d5d5d5 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ebebeb), color-stop(0.65, #dfdfdf), color-stop(1, #d5d5d5));
+    background-clip: padding-box;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border-top: 1px solid #c6c6c6;
+    border-right: 1px solid #c6c6c6;
+    border-bottom: 1px solid #b9b9b9;
+    border-left: 1px solid #c6c6c6;
+    -moz-box-shadow: inset 0 1px 0 0 white;
+    -webkit-box-shadow: inset 0 1px 0 0 white;
+    box-shadow: inset 0 1px 0 0 white;
+    font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    font-style: default;
+    line-height: 33px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    text-align: center;
+    text-shadow: 0 1px 0 white;
+    text-decoration: none;
+    color: #333;
+    cursor: move;
+    width: 84px;
+    height: 35px;
+    display: block;
+    padding-bottom: 1px;
+    font-size: 116%;
+    display: inline-block;
+    margin-left: 5px;
+}
+#bd div.setup-extras div.browser a.help {
+    display: block;
+    position: absolute;
+    bottom: 8px;
+    left: 154px;
+    font-size: 93%;
+    color: #CCC;
+}
+#bd div.setup-extras div.browser a.help:hover {
+    color: white;
+}
+#bd div.setup-extras div.browser.chrome {
+    padding-top: 26px;
+}
+#bd div.setup-extras div.browser.chrome h3.chrome {
+    display: block;
+}
+#bd div.setup-extras div.iphone {
+    padding-top: 40px;
+}
+#bd div.setup-extras div.iphone a.itunes {
+    margin-top: 20px;
+    display: inline-block;
+}
+#bd div.setup-extras div.iphone a.playstore {
+    margin-top: 20px;
+    display: inline-block;
+}
+#bd div.setup-extras div.divider-vertical {
+    padding: 20px 0;
+    width: 2px;
+    height: 100%}
+#bd div.setup-extras div.divider-vertical div {
+    width: 1px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.4);
+}
+#bd div.body-container {
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+#bd div.body-container div.pitch {
+    padding: 75px 20px 0;
+}
+#bd div.body-container div.pitch h2 {
+    font-size: 182%;
+    line-height: 1.5;
+    text-align: center;
+}
+#bd div.body-container div.divider.how-it-works {
+    margin: 70px 100px 60px;
+}
+#bd div.body-container div.how-it-works div.start {
+    text-align: center;
+}
+#bd div.body-container div.how-it-works div.start h3 {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: 0 1px 0 white;
+    -webkit-box-shadow: 0 1px 0 white;
+    box-shadow: 0 1px 0 white;
+    -moz-box-shadow: 0 1px 0 white, inset 0 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 0 white, inset 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 0 white, inset 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-top: 13px;
+    display: inline-block;
+    font-size: 138.5%;
+    font-weight: bold;
+    line-height: 1;
+    padding: 8px 11px;
+    color: white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    background: rgba(0, 116, 0, 0.45);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+#bd div.body-container div.how-it-works div.flow {
+    position: relative;
+    padding-top: 110px;
+}
+#bd div.body-container div.how-it-works div.flow div.spine {
+    margin-left: -3px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 5px;
+    background: #ffe2d4;
+    border-width: 0 1px;
+    border-style: solid;
+    border-color: #f2d6c9;
+}
+#bd div.body-container div.how-it-works div.flow div.stop {
+    position: relative;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.side {
+    margin-top: 110px;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.side h3 {
+    font-size: 138.5%;
+    font-weight: bold;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.side div.divider {
+    margin-top: 5px;
+    position: relative;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.side div.divider div {
+    position: absolute;
+    top: -8px;
+    width: 9px;
+    height: 17px;
+    background: transparent url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/chrome/lander-spine-point.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png) no-repeat 0 0;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.side h4 {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.left-align h3 {
+    margin-left: 28px;
+    margin-right: 518px;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.left-align div.divider {
+    margin-left: 28px;
+    margin-right: 479px;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.left-align div.divider div {
+    right: -10px;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.left-align h4 {
+    margin-left: 28px;
+    margin-right: 518px;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.left-align img {
+    position: relative;
+    float: right;
+    width: 450px;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.left-align img.position {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.right-align h3 {
+    margin-left: 500px;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.right-align div.divider {
+    margin-right: 28px;
+    margin-left: 480px;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.right-align div.divider div {
+    left: -10px;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.right-align h4 {
+    margin-right: 28px;
+    margin-left: 500px;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.right-align img {
+    position: relative;
+    float: left;
+    width: 450px;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.right-align img.position {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.picker {
+    margin-top: 0;
+    min-height: 301px;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.picker h3 {
+    padding-top: 62px;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.picker img {
+    height: 301px;
+    background-image: url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/pictures/lander/feature-picker.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png);
+}
+#bd div.body-container div.how-it-works div.flow div.stop.contacts {
+    min-height: 316px;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.contacts h3 {
+    padding-top: 78px;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.contacts img {
+    height: 316px;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.contacts img.first {
+    background-image: url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/pictures/lander/feature-contacts-1.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png);
+}
+#bd div.body-container div.how-it-works div.flow div.stop.contacts img.second {
+    background-image: url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/pictures/lander/feature-contacts-2.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png);
+}
+#bd div.body-container div.how-it-works div.flow div.stop.send {
+    min-height: 363px;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.send h3 {
+    padding-top: 103px;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.send img {
+    height: 363px;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.send img.first {
+    background-image: url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/pictures/lander/feature-send-1.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png);
+}
+#bd div.body-container div.how-it-works div.flow div.stop.send img.second {
+    background-image: url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/pictures/lander/feature-send-2.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png);
+}
+#bd div.body-container div.how-it-works div.flow div.stop.send img.third {
+    background-image: url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/pictures/lander/feature-send-3.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png);
+}
+#bd div.body-container div.how-it-works div.flow div.stop.post {
+    min-height: 363px;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.post h3 {
+    padding-top: 88px;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.post img {
+    height: 363px;
+}
+#bd div.body-container div.how-it-works div.flow div.stop.post img.first {
+    background-image: url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/pictures/lander/feature-post-1.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png);
+}
+#bd div.body-container div.how-it-works div.flow div.stop.post img.second {
+    background-image: url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/pictures/lander/feature-post-2.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png);
+}
+#bd div.body-container div.how-it-works div.flow div.stop.post img.third {
+    background-image: url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/pictures/lander/feature-post-3.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png);
+}
+#bd div.body-container div.feature {
+    position: relative;
+}
+#bd div.body-container div.feature.left-align h2 {
+    margin-left: 28px;
+    font-size: 182%}
+#bd div.body-container div.feature.left-align h4 {
+    margin-left: 28px;
+    margin-top: 10px;
+    line-height: 1.5;
+    font-size: 108%}
+#bd div.body-container div.feature.left-align img {
+    position: relative;
+    float: right;
+}
+#bd div.body-container div.feature.left-align img.position {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+#bd div.body-container div.feature.right-align h2 {
+    font-size: 182%}
+#bd div.body-container div.feature.right-align h4 {
+    margin-right: 28px;
+    margin-top: 10px;
+    line-height: 1.5;
+    font-size: 108%}
+#bd div.body-container div.feature.right-align img {
+    position: relative;
+    float: left;
+}
+#bd div.body-container div.feature.right-align img.position {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#bd div.body-container div.feature.button h2 {
+    padding-top: 96px;
+    margin-left: 456px;
+}
+#bd div.body-container div.feature.button h4 {
+    margin-left: 456px;
+}
+#bd div.body-container div.feature.button img {
+    width: 426px;
+    height: 326px;
+    background-image: url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/pictures/lander/feature-button.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png);
+}
+#bd div.body-container div.feature.picker h2 {
+    padding-top: 55px;
+    margin-right: 524px;
+}
+#bd div.body-container div.feature.picker h4 {
+    margin-right: 524px;
+}
+#bd div.body-container div.feature.picker img {
+    width: 488px;
+    height: 327px;
+    background-image: url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/pictures/lander/feature-picker.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png);
+}
+#bd div.body-container div.feature.contacts h2 {
+    padding-top: 96px;
+    margin-left: 546px;
+}
+#bd div.body-container div.feature.contacts h4 {
+    margin-left: 546px;
+}
+#bd div.body-container div.feature.contacts img {
+    width: 522px;
+    height: 366px;
+}
+#bd div.body-container div.feature.contacts img.first {
+    background-image: url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/pictures/lander/feature-contacts-1.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png);
+}
+#bd div.body-container div.feature.contacts img.second {
+    background-image: url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/pictures/lander/feature-contacts-2.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png);
+}
+#bd div.body-container div.feature.post h2 {
+    padding-top: 55px;
+    margin-right: 499px;
+}
+#bd div.body-container div.feature.post h4 {
+    margin-right: 499px;
+}
+#bd div.body-container div.feature.post img {
+    width: 463px;
+    height: 373px;
+}
+#bd div.body-container div.feature.post img.first {
+    background-image: url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/pictures/lander/feature-post-1.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png);
+}
+#bd div.body-container div.feature.post img.second {
+    background-image: url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/pictures/lander/feature-post-2.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png);
+}
+#bd div.body-container div.feature.post img.third {
+    background-image: url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/pictures/lander/feature-post-3.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png);
+}
+#bd div.body-container div.divider.feature {
+    margin: 40px 70px;
+}
+#bd div.form-signup-container {
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding-top: 50px;
+}
+#bd div.form-signup-container button.fb-signin {
+    margin: 0 auto;
+    width: 324px;
+    display: block;
+    font-size: 116%;
+    height: 42px;
+}
+#bd div.form-signup-container div.divider-or {
+    margin: 30px 330px;
+    height: auto;
+    border: 0;
+    position: relative;
+}
+#bd div.form-signup-container div.divider-or div {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    background-color: #d2d2ca;
+}
+#bd div.form-signup-container div.divider-or p {
+    display: block;
+    position: relative;
+    text-align: center;
+}
+#bd div.form-signup-container div.divider-or p a, #bd div.form-signup-container div.divider-or p span {
+    font-size: 85%;
+    padding: 0 8px;
+    background-color: #f5f5f1;
+    background: default;
+}
+#bd div.form-signup-container div.divider-or p a strong, #bd div.form-signup-container div.divider-or p span strong {
+    font-weight: bold;
+}
+#bd div.form-signup-container div.divider-or p a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #385ea7;
+}
+#bd div.form-signup-container div.divider-or p a:hover {
+    color: #4e76c4;
+}
+#bd div.form-signup-container div.divider-or p span {
+    color: #999;
+}
+#bd div.form-signup-container div.form-signup {
+    margin: 0 auto 50px;
+    width: 324px;
+}
+#bd div.form-signup-container div.form-signup div.form-row {
+    margin-bottom: 20px;
+}
+#bd div.form-signup-container div.form-signup div.form-row label.label {
+    margin-bottom: 7px;
+    display: block;
+    text-align: left;
+    color: #6e6e6e;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.message {
+    margin-bottom: 7px;
+    display: none;
+    color: red;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item {
+    position: relative;
+    overflow: hidden;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    background: white url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/forms/field-bg.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.gif) repeat-x 0 0;
+    border: 1px solid #b5b8c8;
+    font-size: 12px;
+    width: 324px;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item div.overlay {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    color: transparent;
+    position: absolute;
+    overflow: hidden;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    padding: 6px;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item div.overlay span {
+    font-size: 12px;
+    line-height: 16px;
+    display: inline-block;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item div.overlay span b {
+    background-color: #dbe6f2;
+    font-weight: normal;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item label {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 6px;
+    width: 100%;
+    color: #aaa;
+    display: none;
+    font-size: 12px;
+    line-height: 16px;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item label strong {
+    margin-bottom: 3px;
+    font-weight: bold;
+    display: block;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item label span.list {
+    margin-left: 5px;
+    line-height: 1.5;
+    display: block;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item label span.line {
+    margin-bottom: 3px;
+    display: block;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item input.form-field, #bd div.form-signup-container div.form-signup div.form-row div.form-item textarea.form-field {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    background: transparent;
+    outline: 0;
+    text-align: left;
+    border: 0;
+    padding: 6px;
+    color: #444;
+    resize: none;
+    font-size: 12px;
+    line-height: 16px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item input.form-field:invalid, #bd div.form-signup-container div.form-signup div.form-row div.form-item textarea.form-field:invalid {
+    -moz-box-shadow: none;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item input.form-field {
+    height: 28px;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item-select {
+    width: 324px;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item-select select.form-field {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    width: 100%;
+    outline: 0;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item-select select.form-field option {
+    font-weight: bold;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item-select select.form-field option.message {
+    font-weight: normal;
+    color: #6e6e6e;
+    font-style: italic;
+    border-bottom: 2px solid #ccc;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item-select select.form-field option.message-action {
+    font-weight: normal;
+    font-style: italic;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item-focus {
+    border: 1px solid #7eadd9;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item-invalid {
+    background: white url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/forms/invalid-line.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.gif) repeat-x scroll center bottom;
+    border: 1px solid #dd7870;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item-empty label {
+    display: block;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item-empty select.form-field {
+    color: #444;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item-empty div.form-field-overlay {
+    display: none;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item-loading {
+    background: #EEE;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item-loading input.form-field, #bd div.form-signup-container div.form-signup div.form-row div.form-item-loading textarea.form-field {
+    color: #aaa;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item-disabled {
+    background: white;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item-disabled input.form-field, #bd div.form-signup-container div.form-signup div.form-row div.form-item-disabled textarea.form-field {
+    color: #aaa;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item-rich textarea.form-field {
+    overflow: hidden;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item-checkbox {
+    width: 324px;
+}
+#bd div.form-signup-container div.form-signup div.form-row div.form-item-checkbox label input {
+    margin-right: 5px;
+}
+#bd div.form-signup-container div.form-signup div.form-row-invalid label.label {
+    display: none;
+}
+#bd div.form-signup-container div.form-signup div.form-row-invalid div.message {
+    display: block;
+}
+#bd div.form-signup-container div.form-signup div.form-row-last {
+    margin-bottom: 0;
+}
+#bd div.form-signup-container div.form-signup div.controls {
+    margin-top: 40px;
+    zoom: 1;
+}
+#bd div.form-signup-container div.form-signup div.controls:after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    content: " ";
+    font-size: 0;
+}
+#bd div.form-signup-container div.form-signup div.controls a {
+    line-height: 34px;
+}
+#bd div.form-signup-container div.form-signup div.controls a.button-important {
+    text-decoration: none;
+    cursor: pointer;
+    color: red;
+}
+#bd div.form-signup-container div.form-signup div.controls a.button-important:hover {
+    color: #f33;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-delete {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    background: #d02d17;
+    background: -moz-linear-gradient(top, #ec432e 0, #b41700 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ec432e), color-stop(0.65, #b41700));
+    background: -moz-linear-gradient(top, #ec432e 0, #b41700 65%, #ec432e 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ec432e), color-stop(0.65, #b41700), color-stop(1, #ec432e));
+    background-clip: padding-box;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border-top: 1px solid #b41700;
+    border-right: 1px solid #811000;
+    border-bottom: 1px solid #680d00;
+    border-left: 1px solid #811000;
+    -moz-box-shadow: inset 0 1px 0 0 #ff654e;
+    -webkit-box-shadow: inset 0 1px 0 0 #ff654e;
+    box-shadow: inset 0 1px 0 0 #ff654e;
+    font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    font-style: default;
+    line-height: 1;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    text-align: center;
+    text-shadow: 0 -1px 0 #3f0800;
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    height: 34px;
+    display: block;
+    padding-bottom: 1px;
+    text-shadow: 0 -1px 0 #620d00;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #bd div.form-signup-container div.form-signup div.controls button.button-delete {
+    padding-bottom: 0;
+}
+}#bd div.form-signup-container div.form-signup div.controls button.button-delete:hover {
+    cursor: pointer;
+    background: #be1800;
+    background: #d5311b;
+    background: -moz-linear-gradient(top, #ed4b37 0, #be1800 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ed4b37), color-stop(0.65, #be1800));
+    background: -moz-linear-gradient(top, #ed4b37 0, #be1800 65%, #ed4b37 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ed4b37), color-stop(0.65, #be1800), color-stop(1, #ed4b37));
+    background-clip: padding-box;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-delete:active {
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #c31900;
+    background: #a21400;
+    background: -moz-linear-gradient(top, #811000 20%, #c31900 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #811000), color-stop(1, #c31900));
+    -moz-box-shadow: inset 0 1px 0 0 #dd1c00;
+    -webkit-box-shadow: inset 0 1px 0 0 #dd1c00;
+    box-shadow: inset 0 1px 0 0 #dd1c00;
+    border-top: 1px solid #4e0a00;
+    border-right: 1px solid #5d0c00;
+    border-bottom: 1px solid #680d00;
+    border-left: 1px solid #5d0c00;
+    text-shadow: 0 -1px 0 #4e0a00;
+    background-clip: padding-box;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-delete:focus {
+    outline: 0;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-delete::-moz-focus-inner {
+    border-color: transparent;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-delete span.loading {
+    display: none;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-update {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    background: #58ad23;
+    background: -moz-linear-gradient(top, #6fcd31 0, #418e16 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #6fcd31), color-stop(0.65, #418e16));
+    background: -moz-linear-gradient(top, #6fcd31 0, #418e16 65%, #55a922 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #6fcd31), color-stop(0.65, #418e16), color-stop(1, #55a922));
+    background-clip: padding-box;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border-top: 1px solid #418e16;
+    border-right: 1px solid #2d620f;
+    border-bottom: 1px solid #234c0c;
+    border-left: 1px solid #2d620f;
+    -moz-box-shadow: inset 0 1px 0 0 #8ae558;
+    -webkit-box-shadow: inset 0 1px 0 0 #8ae558;
+    box-shadow: inset 0 1px 0 0 #8ae558;
+    font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    font-style: default;
+    line-height: 1;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    text-align: center;
+    text-shadow: 0 -1px 0 #132806;
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    height: 34px;
+    display: block;
+    padding-bottom: 1px;
+    text-shadow: 0 -1px 0 #21470b;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #bd div.form-signup-container div.form-signup div.controls button.button-update {
+    padding-bottom: 0;
+}
+}#bd div.form-signup-container div.form-signup div.controls button.button-update:hover {
+    cursor: pointer;
+    background: #459717;
+    background: #5db328;
+    background: -moz-linear-gradient(top, #75d039 0, #459717 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #75d039), color-stop(0.65, #459717));
+    background: -moz-linear-gradient(top, #75d039 0, #459717 65%, #59b124 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #75d039), color-stop(0.65, #459717), color-stop(1, #59b124));
+    background-clip: padding-box;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-update:active {
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #479b18;
+    background: #3a7e13;
+    background: -moz-linear-gradient(top, #2d620f 20%, #479b18 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #2d620f), color-stop(1, #479b18));
+    -moz-box-shadow: inset 0 1px 0 0 #51b11b;
+    -webkit-box-shadow: inset 0 1px 0 0 #51b11b;
+    box-shadow: inset 0 1px 0 0 #51b11b;
+    border-top: 1px solid #193608;
+    border-right: 1px solid #1f430a;
+    border-bottom: 1px solid #234c0c;
+    border-left: 1px solid #1f430a;
+    text-shadow: 0 -1px 0 #193608;
+    background-clip: padding-box;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-update:focus {
+    outline: 0;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-update::-moz-focus-inner {
+    border-color: transparent;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-update span.loading {
+    display: none;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-action {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    background: #709adf;
+    background: -moz-linear-gradient(top, #90baff 0, #517bc0 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #90baff), color-stop(0.65, #517bc0));
+    background: -moz-linear-gradient(top, #90baff 0, #517bc0 65%, #608acf 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #90baff), color-stop(0.65, #517bc0), color-stop(1, #608acf));
+    background-clip: padding-box;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border-top: 1px solid #517bc0;
+    border-right: 1px solid #3b62a3;
+    border-bottom: 1px solid #345790;
+    border-left: 1px solid #3b62a3;
+    -moz-box-shadow: inset 0 1px 0 0 #c1d0e9;
+    -webkit-box-shadow: inset 0 1px 0 0 #c1d0e9;
+    box-shadow: inset 0 1px 0 0 #c1d0e9;
+    font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    font-style: default;
+    line-height: 1;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    text-align: center;
+    text-shadow: 0 -1px 0 #294572;
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    height: 34px;
+    display: block;
+    padding-bottom: 1px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #bd div.form-signup-container div.form-signup div.controls button.button-action {
+    padding-bottom: 0;
+}
+}#bd div.form-signup-container div.form-signup div.controls button.button-action:hover {
+    cursor: pointer;
+    background: #5881c3;
+    background: #79a0e1;
+    background: -moz-linear-gradient(top, #9ac0ff 0, #5881c3 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #9ac0ff), color-stop(0.65, #5881c3));
+    background: -moz-linear-gradient(top, #9ac0ff 0, #5881c3 65%, #6890d1 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #9ac0ff), color-stop(0.65, #5881c3), color-stop(1, #6890d1));
+    background-clip: padding-box;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-action:active {
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #5c84c4;
+    background: #4b73b3;
+    background: -moz-linear-gradient(top, #3b62a3 20%, #5c84c4 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #3b62a3), color-stop(1, #5c84c4));
+    -moz-box-shadow: inset 0 1px 0 0 #6f92cb;
+    -webkit-box-shadow: inset 0 1px 0 0 #6f92cb;
+    box-shadow: inset 0 1px 0 0 #6f92cb;
+    border-top: 1px solid #2d4c7e;
+    border-right: 1px solid #325389;
+    border-bottom: 1px solid #345790;
+    border-left: 1px solid #325389;
+    text-shadow: 0 -1px 0 #2d4c7e;
+    background-clip: padding-box;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-action:focus {
+    outline: 0;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-action::-moz-focus-inner {
+    border-color: transparent;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-action span.loading {
+    display: none;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-loading {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    background: #cecece;
+    background: -moz-linear-gradient(top, #ededed 0, #b0b0b0 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ededed), color-stop(0.65, #b0b0b0));
+    background: -moz-linear-gradient(top, #ededed 0, #b0b0b0 65%, #bbb 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ededed), color-stop(0.65, #b0b0b0), color-stop(1, #bbb));
+    background-clip: padding-box;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border-top: 1px solid #b0b0b0;
+    border-right: 1px solid #979797;
+    border-bottom: 1px solid #8a8a8a;
+    border-left: 1px solid #979797;
+    -moz-box-shadow: inset 0 1px 0 0 #fcfcfc;
+    -webkit-box-shadow: inset 0 1px 0 0 #fcfcfc;
+    box-shadow: inset 0 1px 0 0 #fcfcfc;
+    font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    font-style: default;
+    line-height: 1;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    text-align: center;
+    text-shadow: 0 -1px 0 #757575;
+    text-decoration: none;
+    color: #333;
+    width: 100px;
+    height: 34px;
+    display: block;
+    padding-bottom: 1px;
+    text-shadow: 0 1px 0 #e3e3e3;
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #b8b8b8;
+    background: #a7a7a7;
+    background: -moz-linear-gradient(top, #979797 20%, #b8b8b8 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #979797), color-stop(1, #b8b8b8));
+    -moz-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    -webkit-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    box-shadow: inset 0 1px 0 0 #c4c4c4;
+    border-top: 1px solid #7d7d7d;
+    border-right: 1px solid #858585;
+    border-bottom: 1px solid #8a8a8a;
+    border-left: 1px solid #858585;
+    text-shadow: 0 -1px 0 #7d7d7d;
+    background-clip: padding-box;
+    text-shadow: 0 1px 0 #cfcfcf;
+    color: #555;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #bd div.form-signup-container div.form-signup div.controls button.button-loading {
+    padding-bottom: 0;
+}
+}#bd div.form-signup-container div.form-signup div.controls button.button-loading:hover {
+    cursor: pointer;
+    background: #b5b5b5;
+    background: lightgrey;
+    background: -moz-linear-gradient(top, #f2f2f2 0, #b5b5b5 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #f2f2f2), color-stop(0.65, #b5b5b5));
+    background: -moz-linear-gradient(top, #f2f2f2 0, #b5b5b5 65%, silver 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #f2f2f2), color-stop(0.65, #b5b5b5), color-stop(1, silver));
+    background-clip: padding-box;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-loading:active {
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #b8b8b8;
+    background: #a7a7a7;
+    background: -moz-linear-gradient(top, #979797 20%, #b8b8b8 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #979797), color-stop(1, #b8b8b8));
+    -moz-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    -webkit-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    box-shadow: inset 0 1px 0 0 #c4c4c4;
+    border-top: 1px solid #7d7d7d;
+    border-right: 1px solid #858585;
+    border-bottom: 1px solid #8a8a8a;
+    border-left: 1px solid #858585;
+    text-shadow: 0 -1px 0 #7d7d7d;
+    background-clip: padding-box;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-loading:focus {
+    outline: 0;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-loading::-moz-focus-inner {
+    border-color: transparent;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-loading span.loading {
+    display: none;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-loading:active {
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #b8b8b8;
+    background: #a7a7a7;
+    background: -moz-linear-gradient(top, #979797 20%, #b8b8b8 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #979797), color-stop(1, #b8b8b8));
+    -moz-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    -webkit-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    box-shadow: inset 0 1px 0 0 #c4c4c4;
+    border-top: 1px solid #7d7d7d;
+    border-right: 1px solid #858585;
+    border-bottom: 1px solid #8a8a8a;
+    border-left: 1px solid #858585;
+    text-shadow: 0 -1px 0 #7d7d7d;
+    background-clip: padding-box;
+    text-shadow: 0 1px 0 #cfcfcf;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-loading:hover {
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #b8b8b8;
+    background: #a7a7a7;
+    background: -moz-linear-gradient(top, #979797 20%, #b8b8b8 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #979797), color-stop(1, #b8b8b8));
+    -moz-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    -webkit-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    box-shadow: inset 0 1px 0 0 #c4c4c4;
+    border-top: 1px solid #7d7d7d;
+    border-right: 1px solid #858585;
+    border-bottom: 1px solid #8a8a8a;
+    border-left: 1px solid #858585;
+    text-shadow: 0 -1px 0 #7d7d7d;
+    background-clip: padding-box;
+    text-shadow: 0 1px 0 #cfcfcf;
+    color: #555;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-loading span.text {
+    display: none;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-loading span.loading {
+    display: inline;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-secondary-action {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    background: #cecece;
+    background: -moz-linear-gradient(top, #ededed 0, #b0b0b0 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ededed), color-stop(0.65, #b0b0b0));
+    background: -moz-linear-gradient(top, #ededed 0, #b0b0b0 65%, #bbb 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ededed), color-stop(0.65, #b0b0b0), color-stop(1, #bbb));
+    background-clip: padding-box;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border-top: 1px solid #b0b0b0;
+    border-right: 1px solid #979797;
+    border-bottom: 1px solid #8a8a8a;
+    border-left: 1px solid #979797;
+    -moz-box-shadow: inset 0 1px 0 0 #fcfcfc;
+    -webkit-box-shadow: inset 0 1px 0 0 #fcfcfc;
+    box-shadow: inset 0 1px 0 0 #fcfcfc;
+    font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    font-style: default;
+    line-height: 1;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    text-align: center;
+    text-shadow: 0 -1px 0 #757575;
+    text-decoration: none;
+    color: #333;
+    width: 100px;
+    height: 34px;
+    display: block;
+    padding-bottom: 1px;
+    text-shadow: 0 1px 0 #e3e3e3;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #bd div.form-signup-container div.form-signup div.controls button.button-secondary-action {
+    padding-bottom: 0;
+}
+}#bd div.form-signup-container div.form-signup div.controls button.button-secondary-action:hover {
+    cursor: pointer;
+    background: #b5b5b5;
+    background: lightgrey;
+    background: -moz-linear-gradient(top, #f2f2f2 0, #b5b5b5 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #f2f2f2), color-stop(0.65, #b5b5b5));
+    background: -moz-linear-gradient(top, #f2f2f2 0, #b5b5b5 65%, silver 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #f2f2f2), color-stop(0.65, #b5b5b5), color-stop(1, silver));
+    background-clip: padding-box;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-secondary-action:active {
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #b8b8b8;
+    background: #a7a7a7;
+    background: -moz-linear-gradient(top, #979797 20%, #b8b8b8 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #979797), color-stop(1, #b8b8b8));
+    -moz-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    -webkit-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    box-shadow: inset 0 1px 0 0 #c4c4c4;
+    border-top: 1px solid #7d7d7d;
+    border-right: 1px solid #858585;
+    border-bottom: 1px solid #8a8a8a;
+    border-left: 1px solid #858585;
+    text-shadow: 0 -1px 0 #7d7d7d;
+    background-clip: padding-box;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-secondary-action:focus {
+    outline: 0;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-secondary-action::-moz-focus-inner {
+    border-color: transparent;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-secondary-action span.loading {
+    display: none;
+}
+#bd div.form-signup-container div.form-signup div.controls button.button-secondary-action:active {
+    padding-bottom: 0;
+    cursor: pointer;
+    background: #b8b8b8;
+    background: #a7a7a7;
+    background: -moz-linear-gradient(top, #979797 20%, #b8b8b8 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0.2, #979797), color-stop(1, #b8b8b8));
+    -moz-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    -webkit-box-shadow: inset 0 1px 0 0 #c4c4c4;
+    box-shadow: inset 0 1px 0 0 #c4c4c4;
+    border-top: 1px solid #7d7d7d;
+    border-right: 1px solid #858585;
+    border-bottom: 1px solid #8a8a8a;
+    border-left: 1px solid #858585;
+    text-shadow: 0 -1px 0 #7d7d7d;
+    background-clip: padding-box;
+    text-shadow: 0 1px 0 #cfcfcf;
+}
+#bd div.form-signup-container div.form-signup div.controls span.separator-text {
+    margin: 0 10px;
+    line-height: 34px;
+    color: #6e6e6e;
+}
+#bd div.steps-container {
+    padding-top: 50px;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+#bd div.steps-container>div.content {
+    margin: 0 auto;
+    padding: 0 0 65px;
+    width: 562px;
+}
+#bd div.steps-container>div.content>h4 {
+    text-align: center;
+}
+#bd div.steps-container>div.content>h4 span.label {
+    font-size: 182%}
+#bd div.steps-container>div.content>h4 a.dapt-it {
+    margin-left: 14px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    background: #e5e5e5;
+    background: -moz-linear-gradient(top, #ebebeb 0, #dfdfdf 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ebebeb), color-stop(0.65, #dfdfdf));
+    background: -moz-linear-gradient(top, #ebebeb 0, #dfdfdf 65%, #d5d5d5 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ebebeb), color-stop(0.65, #dfdfdf), color-stop(1, #d5d5d5));
+    background-clip: padding-box;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border-top: 1px solid #c6c6c6;
+    border-right: 1px solid #c6c6c6;
+    border-bottom: 1px solid #b9b9b9;
+    border-left: 1px solid #c6c6c6;
+    -moz-box-shadow: inset 0 1px 0 0 white;
+    -webkit-box-shadow: inset 0 1px 0 0 white;
+    box-shadow: inset 0 1px 0 0 white;
+    font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    font-style: default;
+    line-height: 39px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    text-align: center;
+    text-shadow: 0 1px 0 white;
+    text-decoration: none;
+    color: #333;
+    cursor: move;
+    width: 122px;
+    height: 41px;
+    display: block;
+    padding-bottom: 1px;
+    font-size: 153.9%;
+    display: inline-block;
+}
+#bd div.steps-container>div.content>h5 {
+    margin: 16px 60px 0;
+    border-top: 1px solid #d2d2ca;
+    padding-top: 10px;
+    color: #6e6e6e;
+    text-align: center;
+}
+#bd div.steps-container>div.content>ul.steps {
+    padding-top: 50px;
+}
+#bd div.steps-container>div.content>ul.steps li.step {
+    margin-bottom: 45px;
+    opacity: .5;
+}
+#bd div.steps-container>div.content>ul.steps li.step>p.number {
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.8);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.8);
+    border: 1px solid #0a5fa6;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    padding: 14px 20px;
+    font-size: 30px;
+    font-weight: bold;
+    background: #0e89ee;
+    line-height: 1;
+    color: white;
+}
+#bd div.steps-container>div.content>ul.steps li.step>div.content {
+    margin-left: 76px;
+    padding-top: 17px;
+}
+#bd div.steps-container>div.content>ul.steps li.step>div.content>h2 {
+    font-size: 138.5%;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+#bd div.steps-container>div.content>ul.steps li.step>div.content>h3 {
+    margin-top: 4px;
+    color: #6e6e6e;
+    font-size: 116%;
+    line-height: 1.5;
+}
+#bd div.steps-container>div.content>ul.steps li.step>div.content ul.options {
+    margin-top: 24px;
+    margin-left: 25px;
+}
+#bd div.steps-container>div.content>ul.steps li.step>div.content ul.options li.option {
+    list-style: disc outside none;
+    font-size: 116%;
+    line-height: 1.5;
+}
+#bd div.steps-container>div.content>ul.steps li.step>div.content ul.options li.option ul.thumbs {
+    margin-top: 10px;
+}
+#bd div.steps-container>div.content>ul.steps li.step>div.content ul.options li.option ul.thumbs li.thumb {
+    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-left: 13px;
+}
+#bd div.steps-container>div.content>ul.steps li.step>div.content ul.options li.option ul.thumbs li.thumb img {
+    display: block;
+}
+#bd div.steps-container>div.content>ul.steps li.step>div.content ul.options li.option ul.thumbs li.thumb:first-child {
+    margin-left: 2px;
+}
+#bd div.steps-container>div.content>ul.steps li.step>div.content ul.options li.option h5 {
+    margin-top: 12px;
+    font-size: 85%;
+    color: #6e6e6e;
+}
+#bd div.steps-container>div.content>ul.steps li.step>div.content ul.options div.divider-or {
+    margin: 29px 15px 25px;
+    height: auto;
+    border: 0;
+    position: relative;
+}
+#bd div.steps-container>div.content>ul.steps li.step>div.content ul.options div.divider-or div {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    background-color: #d2d2ca;
+}
+#bd div.steps-container>div.content>ul.steps li.step>div.content ul.options div.divider-or p {
+    display: block;
+    position: relative;
+    text-align: center;
+}
+#bd div.steps-container>div.content>ul.steps li.step>div.content ul.options div.divider-or p a, #bd div.steps-container>div.content>ul.steps li.step>div.content ul.options div.divider-or p span {
+    font-size: 85%;
+    padding: 0 8px;
+    background-color: #f5f5f1;
+    background: default;
+}
+#bd div.steps-container>div.content>ul.steps li.step>div.content ul.options div.divider-or p a strong, #bd div.steps-container>div.content>ul.steps li.step>div.content ul.options div.divider-or p span strong {
+    font-weight: bold;
+}
+#bd div.steps-container>div.content>ul.steps li.step>div.content ul.options div.divider-or p a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #385ea7;
+}
+#bd div.steps-container>div.content>ul.steps li.step>div.content ul.options div.divider-or p a:hover {
+    color: #4e76c4;
+}
+#bd div.steps-container>div.content>ul.steps li.step>div.content ul.options div.divider-or p span {
+    color: #999;
+}
+#bd div.steps-container>div.content>ul.steps li.step>div.content ul.options div.divider-or p span {
+    font-weight: bold;
+    color: #6e6e6e;
+}
+#bd div.steps-container>div.content>ul.steps li.step>div.content a.image {
+    cursor: default;
+    margin-top: 10px;
+}
+#bd div.steps-container>div.content>ul.steps li.step>div.content a.image img {
+    -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.07);
+    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.07);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.07);
+    margin-top: 18px;
+    opacity: 1;
+    padding: 3px;
+    background: white;
+    border: 1px solid #d2d2ca;
+}
+#bd div.steps-container>div.content>ul.steps li.step>div.content a.image:hover img {
+    opacity: 1;
+}
+#bd div.steps-container>div.content>ul.steps li.step>div.content p.button {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    margin: 18px 0 0;
+    display: inline-block;
+    padding: 15px;
+    background: #c5e7f7;
+}
+#bd div.steps-container>div.content>ul.steps li.step>div.content p.button span.label {
+    font-size: 153.9%;
+    color: #6e6e6e;
+}
+#bd div.steps-container>div.content>ul.steps li.step>div.content p.button a.dapt-it {
+    margin-left: 14px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    background: #e5e5e5;
+    background: -moz-linear-gradient(top, #ebebeb 0, #dfdfdf 65%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ebebeb), color-stop(0.65, #dfdfdf));
+    background: -moz-linear-gradient(top, #ebebeb 0, #dfdfdf 65%, #d5d5d5 100%);
+    background: -webkit-gradient(linear, 0% 0, 0% 100%, color-stop(0, #ebebeb), color-stop(0.65, #dfdfdf), color-stop(1, #d5d5d5));
+    background-clip: padding-box;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border-top: 1px solid #c6c6c6;
+    border-right: 1px solid #c6c6c6;
+    border-bottom: 1px solid #b9b9b9;
+    border-left: 1px solid #c6c6c6;
+    -moz-box-shadow: inset 0 1px 0 0 white;
+    -webkit-box-shadow: inset 0 1px 0 0 white;
+    box-shadow: inset 0 1px 0 0 white;
+    font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+    font-style: default;
+    line-height: 39px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    text-align: center;
+    text-shadow: 0 1px 0 white;
+    text-decoration: none;
+    color: #333;
+    cursor: move;
+    width: 108px;
+    height: 41px;
+    display: block;
+    padding-bottom: 1px;
+    font-size: 153.9%;
+    display: inline-block;
+}
+#bd div.steps-container>div.content>ul.steps li.step.active {
+    opacity: 1;
+}
+#bd div.steps-container>div.content>ul.steps li.step:last-child {
+    margin-bottom: 0;
+}
+#ft {
+    -moz-border-radius: 0 0 6px 6px;
+    -webkit-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+    background-color: #b9ddf5;
+    border-width: 0 1px 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.25);
+}
+#ft div.form-invite-container {
+    padding: 40px 0;
+    border-bottom: 1px dotted #bbbbae;
+}
+#ft div.form-invite-container div.form-invite div.form-row label.label {
+    margin-bottom: 7px;
+    display: block;
+    text-align: left;
+    color: #6e6e6e;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.message {
+    margin-bottom: 7px;
+    display: none;
+    color: red;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item {
+    position: relative;
+    overflow: hidden;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    background: white url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/forms/field-bg.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.gif) repeat-x 0 0;
+    border: 1px solid #b5b8c8;
+    font-size: 12px;
+    width: 380px;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item div.overlay {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    color: transparent;
+    position: absolute;
+    overflow: hidden;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    padding: 6px;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item div.overlay span {
+    font-size: 12px;
+    line-height: 16px;
+    display: inline-block;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item div.overlay span b {
+    background-color: #dbe6f2;
+    font-weight: normal;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item label {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 6px;
+    width: 100%;
+    color: #aaa;
+    display: none;
+    font-size: 12px;
+    line-height: 16px;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item label strong {
+    margin-bottom: 3px;
+    font-weight: bold;
+    display: block;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item label span.list {
+    margin-left: 5px;
+    line-height: 1.5;
+    display: block;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item label span.line {
+    margin-bottom: 3px;
+    display: block;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item input.form-field, #ft div.form-invite-container div.form-invite div.form-row div.form-item textarea.form-field {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    background: transparent;
+    outline: 0;
+    text-align: left;
+    border: 0;
+    padding: 6px;
+    color: #444;
+    resize: none;
+    font-size: 12px;
+    line-height: 16px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item input.form-field:invalid, #ft div.form-invite-container div.form-invite div.form-row div.form-item textarea.form-field:invalid {
+    -moz-box-shadow: none;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item input.form-field {
+    height: 28px;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item-select {
+    width: 380px;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item-select select.form-field {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    width: 100%;
+    outline: 0;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item-select select.form-field option {
+    font-weight: bold;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item-select select.form-field option.message {
+    font-weight: normal;
+    color: #6e6e6e;
+    font-style: italic;
+    border-bottom: 2px solid #ccc;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item-select select.form-field option.message-action {
+    font-weight: normal;
+    font-style: italic;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item-focus {
+    border: 1px solid #7eadd9;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item-invalid {
+    background: white url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/forms/invalid-line.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.gif) repeat-x scroll center bottom;
+    border: 1px solid #dd7870;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item-empty label {
+    display: block;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item-empty select.form-field {
+    color: #444;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item-empty div.form-field-overlay {
+    display: none;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item-loading {
+    background: #EEE;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item-loading input.form-field, #ft div.form-invite-container div.form-invite div.form-row div.form-item-loading textarea.form-field {
+    color: #aaa;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item-disabled {
+    background: white;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item-disabled input.form-field, #ft div.form-invite-container div.form-invite div.form-row div.form-item-disabled textarea.form-field {
+    color: #aaa;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item-rich textarea.form-field {
+    overflow: hidden;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item-checkbox {
+    width: 380px;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item-checkbox label input {
+    margin-right: 5px;
+}
+#ft div.form-invite-container div.form-invite div.form-row div.form-item label {
+    text-align: center;
+}
+#ft div.form-invite-container div.form-invite div.controls {
+    margin-top: 0;
+    margin-left: 15px;
+}
+#ft div.form-invite-container div.form-invite div.controls button.submit {
+    width: 86px;
+    height: 30px;
+    font-size: 93%}
+#ft div.form-invite-container div.submit-success h3 {
+    text-align: center;
+    font-size: 123.1%;
+    line-height: 1.4;
+    color: #333;
+}
+#ft div.form-invite-container div.submit-success h3 img {
+    margin-right: 5px;
+    vertical-align: -3px;
+    width: 16px;
+    height: 16px;
+    background: transparent url(http://d3fl0gfzhx03ta.cloudfront.net/images/desktop/icons/app/sprite.bc281a3a5a9a792181fd9a8e01f607fa382ae2d5.png) no-repeat -16px 0;
+    opacity: .75;
+}
+#ft div.footer-container {
+    padding: 22px 20px 20px;
+}
+#ft div.footer-container span.attribution {
+    color: #6e6e6e;
+}
+#ft div.footer-container span.attribution a {
+    color: #6e6e6e;
+}
+
+form p { position:relative }
+label  { position:absolute; top:0; left:0}
