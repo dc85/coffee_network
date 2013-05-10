@@ -20,6 +20,9 @@ test:
 
 production:
   adapter: sqlite3
-  database: db/production.sqlite3
+  database: bpatro_coffee
+  host: localhost
+  username: bpatro_barista
+  password: c3chensi
   pool: 5
   timeout: 5000

@@ -1,4 +1,88 @@
 <% provide(:title, 'Sign up') %>
-<h1>Sign up</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<div id="wrap">
+	<div id="main">
+		<div id="bd">
+			<div class="setup-extras clearfix">
+				<div class="browser left">
+					<div class="span4 offset1">
+						<ul>
+							<li>
+								<table>
+									<tr>
+										<td>
+											<li><input type="text" placeholder="Login" /></li>
+											<li><input type="password" placeholder="Password" /></li>
+										</td>
+										<td>
+											<input class="loginbutton" name="login" type="submit" value="Login" />
+										</td>
+									</tr>
+								</table>
+							</li>
+							<li><br /></li>
+							<li>Manage your coffee network using your <br />corporate account. <a href="/signup">Signup</a> today!</li>
+						</ul>
+					</div>
+				</div>
+				<div class="divider-vertical border-box left"><div></div></div>
+				<div class="iphone left">
+					<h3>Get the Coffee Network app on IPhone and Andriod</h3>
+					<a class="itunes" target="_blank" href="http://itunes.com/apps/maps">
+						<img src="http://www.coffeenetwork.ca/appstoredownload-original.png" width="135px" height="40px" />
+					</a>
+					<a class="playstore" target="_blank" href="http://playstore.com/apps/maps">
+						<img src="http://www.coffeenetwork.ca/googleplay-original.png" width="135px" height="40px" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="hd">
+			<div class="top-bar">
+				<a class="home left" href="/">
+					<img src="http://www.coffeenetwork.ca/emblem.png" />
+				</a>
+				<h1 class="unselectable left">Insert Slogan Here</h1>
+				<div class="links right clearfix border-box">
+
+					<a class="link right" href="/logout">About</a>
+					<a class="link right" href="/feed">Signup</a>
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="span3 offset3">
+					<%= form_for(@user) do |f| %>
+					<%= render 'shared/error_messages' %>
+
+					<%= f.text_field :name, :placeholder=>"Name" %>
+
+					<%= f.text_field :email, :placeholder=>"Email" %>
+
+					<%= f.text_field :company, :placeholder=>"Company" %>
+					
+					<%= f.text_field :jobtitle, :placeholder=>"Job Title" %>
+
+					<%= f.password_field :password, :placeholder=>"Password" %>
+
+					<%= f.password_field :password_confirmation, :placeholder=>"Password Confirmation" %>
+
+					<%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
+
+					<% end %>
+				</div>
+			</div>
+		</div>
+
+		<div id="ft">
+			<div class="footer-container">
+				<p class="left">
+					&copy; 2013 <a class="copyright" target="_blank" href="http://www.coffeenetwork.ca">Coffee Software Design Inc.</a>
+				</p>
+				<a href="mailto:hello@coffeenework.ca" class="right">Contact us</a>
+
+			</div>	
+		</div>
+	</div>
+</div>
+
 
